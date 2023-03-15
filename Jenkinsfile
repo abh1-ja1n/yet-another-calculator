@@ -22,8 +22,8 @@ pipeline {
       steps {
         dir(path: 'sci-calc-backend') {
             sh 'pwd' 
-          sh 'pip install -r requirements.txt'
-          sh 'python -m unittest discover tests'
+          sh 'pip3 install -r requirements.txt'
+          sh 'python3 -m unittest discover tests'
         }
 
       }
