@@ -21,6 +21,7 @@ pipeline {
     stage('Build and Test Backend') {
       steps {
         dir(path: 'sci-calc-backend') {
+            sh 'pwd' 
           sh 'pip install -r requirements.txt'
           sh 'python -m unittest discover tests'
         }
