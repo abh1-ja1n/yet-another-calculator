@@ -30,11 +30,11 @@ pipeline {
     stage('Containerize') {
       steps {
         dir(path: 'sci-calc') {
-          sh 'docker build -t sci-calc-frontend-image .'
+          sh 'sudo docker build -t sci-calc-frontend-image .'
         }
 
         dir(path: 'sci-calc-backend') {
-          sh 'docker build -t sci-calc-backend-image .'
+          sh 'sudo docker build -t sci-calc-backend-image .'
         }
       }
     }
