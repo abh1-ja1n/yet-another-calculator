@@ -14,20 +14,29 @@ pipeline {
           // sh 'npm run test'
           sh 'npm run build'
         }
-
       }
     }
 
     stage('Build and Test Backend') {
       steps {
         dir(path: 'sci-calc-backend') {
-            sh 'pwd' 
+          sh 'pwd' 
           sh 'pip3 install -r requirements.txt'
           sh 'python3 -m unittest discover tests'
         }
-
       }
     }
 
+    stage('Containerize') {
+      steps {
+        dir(path: 'sci-calc') {
+          sh 'docker build -t sci-calc-frontend-image .'
+        }
+
+        dir(path: 'sci-calc-backend') {
+          sh 'docker build -t sci-calc-backend-image .'
+        }
+      }
+    }
   }
 }
