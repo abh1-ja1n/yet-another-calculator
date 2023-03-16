@@ -6,6 +6,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 @app.route('/sqrt', methods=['POST'])
+@cross_origin()
 def calculate_square_root():
     data = request.get_json()
     num = float(data['number'])
@@ -13,6 +14,7 @@ def calculate_square_root():
     return jsonify({'result': result})
 
 @app.route('/factorial', methods=['POST'])
+@cross_origin()
 def calculate_factorial():
     data = request.get_json()
     num = float(data['number'])
@@ -20,6 +22,7 @@ def calculate_factorial():
     return jsonify({'result': result})
 
 @app.route('/ln', methods=['POST'])
+@cross_origin()
 def calculate_ln():
     data = request.get_json()
     num = float(data['number'])
@@ -27,6 +30,7 @@ def calculate_ln():
     return jsonify({'result': result})
 
 @app.route('/power', methods=['POST'])
+@cross_origin()
 def calculate_power():
     data = request.get_json()
     num = float(data['number'])
