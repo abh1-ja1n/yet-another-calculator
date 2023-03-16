@@ -42,7 +42,7 @@ pipeline {
 
     stage('Containerize Frontend') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        withCredentials([usernamePassword(credentialsId: 'a1e5a121-5455-410f-9e53-c0af6a006fde', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           dir(path: 'sci-calc') {
             sh 'docker build -t $USERNAME/sci-calc-frontend-image .'
             sh 'docker login -u $USERNAME -p $PASSWORD'
@@ -54,7 +54,7 @@ pipeline {
 
     stage('Containerize Backend') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        withCredentials([usernamePassword(credentialsId: 'a1e5a121-5455-410f-9e53-c0af6a006fde', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           dir(path: 'sci-calc-backend') {
             sh 'docker build -t $USERNAME/sci-calc-backend-image .'
             sh 'docker login -u $USERNAME -p $PASSWORD'
