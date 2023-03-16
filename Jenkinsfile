@@ -22,7 +22,7 @@ pipeline {
         dir(path: 'sci-calc-backend') {
           sh 'pwd' 
           sh 'pip3 install -r requirements.txt'
-          sh 'python3 app.py'
+          sh 'python3 app.py &'
           sh 'python3 -m unittest discover tests'
         }
       }
