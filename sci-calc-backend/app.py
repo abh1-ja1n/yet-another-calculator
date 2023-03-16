@@ -1,9 +1,10 @@
 from flask import Flask, jsonify, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import math
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
+
 @app.route('/sqrt', methods=['POST'])
 def calculate_square_root():
     data = request.get_json()
