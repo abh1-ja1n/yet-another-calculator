@@ -1,8 +1,8 @@
 import unittest
 import requests
 
-API_URL = 'http://127.0.0.1:5000'
-# API_URL = 'http://172.22.0.2:5000'
+# API_URL = 'http://127.0.0.1:5000'
+API_URL = 'http://172.23.0.2:5000'
 
 class TestScientificCalculator(unittest.TestCase):
 
