@@ -28,14 +28,38 @@ pipeline {
       }
     }
 
-    stage('Containerize') {
-      steps {
-        dir(path: 'sci-calc') {
-          sh 'docker build -t sci-calc-frontend-image .'
-        }
+    // stage('Containerize') {
+    //   steps {
+    //     dir(path: 'sci-calc') {
+    //       sh 'docker build -t sci-calc-frontend-image .'
+    //     }
 
-        dir(path: 'sci-calc-backend') {
-          sh 'docker build -t sci-calc-backend-image .'
+    //     dir(path: 'sci-calc-backend') {
+    //       sh 'docker build -t sci-calc-backend-image .'
+    //     }
+    //   }
+    // }
+
+    stage('Containerize Frontend') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+          dir(path: 'sci-calc') {
+            sh 'docker build -t $USERNAME/sci-calc-frontend-image .'
+            sh 'docker login -u $USERNAME -p $PASSWORD'
+            sh 'docker push $USERNAME/sci-calc-frontend-image'
+          }
+        }
+      }
+    }
+
+    stage('Containerize Backend') {
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+          dir(path: 'sci-calc-backend') {
+            sh 'docker build -t $USERNAME/sci-calc-backend-image .'
+            sh 'docker login -u $USERNAME -p $PASSWORD'
+            sh 'docker push $USERNAME/sci-calc-backend-image'
+          }
         }
       }
     }
