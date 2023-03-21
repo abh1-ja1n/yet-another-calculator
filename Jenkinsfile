@@ -55,7 +55,7 @@ pipeline {
     
     stage('Deploy') {
   steps {
-    sh 'ansible-playbook -i inventory deploy.yaml --extra-vars '@vars.yml' '
+    sh 'ansible-playbook -i inventory deploy.yaml --extra-vars "@vars.yml" '
   }
 }
 
