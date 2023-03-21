@@ -3,6 +3,7 @@ import requests
 
 API_URL = 'http://127.0.0.1:5000'
 # API_URL = 'http://172.25.0.2:5000'
+# API_URL = 'http://backend:5000'
 
 class TestScientificCalculator(unittest.TestCase):
 
