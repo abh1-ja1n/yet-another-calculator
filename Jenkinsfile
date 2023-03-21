@@ -28,18 +28,6 @@ pipeline {
       }
     }
 
-    // stage('Containerize') {
-    //   steps {
-    //     dir(path: 'sci-calc') {
-    //       sh 'docker build -t sci-calc-frontend-image .'
-    //     }
-
-    //     dir(path: 'sci-calc-backend') {
-    //       sh 'docker build -t sci-calc-backend-image .'
-    //     }
-    //   }
-    // }
-
     stage('Containerize Frontend') {
       steps {
         withCredentials([usernamePassword(credentialsId: 'a1e5a121-5455-410f-9e53-c0af6a006fde', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
@@ -63,5 +51,13 @@ pipeline {
         }
       }
     }
+
+    
+    stage('Deploy') {
+  steps {
+    sh 'ansible-playbook -i inventory deploy.yaml --extra-vars '@vars.yml'
+  }
+}
+
   }
 }

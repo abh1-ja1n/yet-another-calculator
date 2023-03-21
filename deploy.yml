@@ -1,0 +1,33 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        update_cache: no
+        state: present
+
+    - name: Pull Frontend Image
+      docker_image:
+        name: "{{ frontend_image }}"
+        source: pull
+
+    - name: Pull Backend Image
+      docker_image:
+        name: "{{ backend_image }}"
+        source: pull
+
+    - name: Run Frontend Container
+      docker_container:
+        name: frontend
+        image: "{{ frontend_image }}"
+        published_ports:
+          - "80:80"
+        state: started
+
+    - name: Run Backend Container
+      docker_container:
+        name: backend
+        image: "{{ backend_image }}"
+        state: started
