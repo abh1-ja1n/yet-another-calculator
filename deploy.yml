@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   become: yes
+  become_user: jenkins
   tasks:
     - name: Install Docker
       apt:
