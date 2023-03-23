@@ -1,12 +1,11 @@
 from flask import Flask, jsonify, request
-from flask_cors import CORS, cross_origin
+from flask_cors import cross_origin
 import math
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True)
 
 @app.route('/sqrt', methods=['POST'])
-@cross_origin(origins='*')
+@cross_origin(origins=['http://frontend:3000'])
 def calculate_square_root():
     data = request.get_json()
     num = float(data['number'])
@@ -16,7 +15,7 @@ def calculate_square_root():
     return response
 
 @app.route('/factorial', methods=['POST'])
-@cross_origin(origins='*')
+@cross_origin(origins=['http://frontend:3000'])
 def calculate_factorial():
     data = request.get_json()
     num = float(data['number'])
@@ -27,7 +26,7 @@ def calculate_factorial():
     return response
 
 @app.route('/ln', methods=['POST'])
-@cross_origin(origins='*')
+@cross_origin(origins=['http://frontend:3000'])
 def calculate_ln():
     data = request.get_json()
     num = float(data['number'])
@@ -37,7 +36,7 @@ def calculate_ln():
     return response
 
 @app.route('/power', methods=['POST'])
-@cross_origin(origins='*')
+@cross_origin(origins=['http://frontend:3000'])
 def calculate_power():
     data = request.get_json()
     num = float(data['number'])
