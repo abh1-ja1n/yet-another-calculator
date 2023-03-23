@@ -11,10 +11,8 @@ function Calculator() {
 
   const calculateSquareRoot = async () => {
     try {
-        // console.log('fjsd');
       const response = await axios.post(API_URL + '/sqrt', { number });
       setResult(response.data.result);
-      // console.log('sgss00');
     } catch (error) {
       console.error(error);
     }
