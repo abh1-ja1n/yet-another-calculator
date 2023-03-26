@@ -12,20 +12,25 @@ CORS(app, supports_credentials=True)
 def calculate_square_root():
     data = request.get_json()
     num = float(data['number'])
+    
+    if num < 0:
+        return jsonify({'error': 'Please enter a non-negative number'})
+    
     result = math.sqrt(num)
     response = jsonify({'result': result})
-    # response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
     return response
 
 @app.route('/factorial', methods=['POST'])
 @cross_origin(supports_credentials=True)
 def calculate_factorial():
     data = request.get_json()
-    num = float(data['number'])
+    num = int(data['number'])
+    
+    if num < 0:
+        return jsonify({'error': 'Please enter a non-negative integer'})
+    
     result = math.factorial(num)
     response = jsonify({'result': result})
-    # response.headers.add('Access-Control-Allow-Origin', '*')
-    # response.headers.add('Access-Control-Allow-Credentials', '*')
     return response
 
 @app.route('/ln', methods=['POST'])
@@ -33,9 +38,12 @@ def calculate_factorial():
 def calculate_ln():
     data = request.get_json()
     num = float(data['number'])
+    
+    if num <= 0:
+        return jsonify({'error': 'Please enter a positive number'})
+    
     result = math.log(num)
     response = jsonify({'result': result})
-    # response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 @app.route('/power', methods=['POST'])
@@ -44,10 +52,14 @@ def calculate_power():
     data = request.get_json()
     num = float(data['number'])
     power = float(data['power'])
+    
+    if num == 0 and power <= 0:
+        return jsonify({'error': 'Cannot raise zero to a non-positive power'})
+    
     result = math.pow(num, power)
     response = jsonify({'result': result})
-    # response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
