@@ -1,0 +1,296 @@
+2023-04-03 22:34:36 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.236:5000
+2023-04-03 22:34:36 INFO-[33mPress CTRL+C to quit[0m
+2023-04-03 22:34:36 INFO- * Restarting with stat
+2023-04-03 22:34:37 WARNING- * Debugger is active!
+2023-04-03 22:34:37 INFO- * Debugger PIN: 324-570-575
+2023-04-03 22:34:51 INFO-127.0.0.1 - - [03/Apr/2023 22:34:51] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 22:34:51 INFO-calculate_square_root: input=3.0
+2023-04-03 22:34:51 INFO-calculate_square_root: result=1.7320508075688772
+2023-04-03 22:34:51 INFO-127.0.0.1 - - [03/Apr/2023 22:34:51] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:34:59 INFO-127.0.0.1 - - [03/Apr/2023 22:34:59] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 22:34:59 INFO-calculate_square_root: input=3.0
+2023-04-03 22:34:59 INFO-calculate_square_root: result=1.7320508075688772
+2023-04-03 22:34:59 INFO-127.0.0.1 - - [03/Apr/2023 22:34:59] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:35:01 INFO-127.0.0.1 - - [03/Apr/2023 22:35:01] "OPTIONS /power HTTP/1.1" 200 -
+2023-04-03 22:35:01 INFO-calculate_power: input=3.0, power=-2.0
+2023-04-03 22:35:01 INFO-calculate_power: result=0.1111111111111111
+2023-04-03 22:35:01 INFO-127.0.0.1 - - [03/Apr/2023 22:35:01] "POST /power HTTP/1.1" 200 -
+2023-04-03 22:35:05 INFO-calculate_power: input=3.0, power=2.0
+2023-04-03 22:35:05 INFO-calculate_power: result=9.0
+2023-04-03 22:35:05 INFO-127.0.0.1 - - [03/Apr/2023 22:35:05] "POST /power HTTP/1.1" 200 -
+2023-04-03 22:35:06 INFO-127.0.0.1 - - [03/Apr/2023 22:35:06] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:35:06 INFO-calculate_ln: input=3.0
+2023-04-03 22:35:06 INFO-calculate_ln: result=1.0986122886681098
+2023-04-03 22:35:06 INFO-127.0.0.1 - - [03/Apr/2023 22:35:06] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:11 INFO-127.0.0.1 - - [03/Apr/2023 22:35:11] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:35:11 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:11 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:11 INFO-127.0.0.1 - - [03/Apr/2023 22:35:11] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:12 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:12 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:12 INFO-127.0.0.1 - - [03/Apr/2023 22:35:12] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:13 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:13 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:13 INFO-127.0.0.1 - - [03/Apr/2023 22:35:13] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:13 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:13 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:13 INFO-127.0.0.1 - - [03/Apr/2023 22:35:13] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:19 INFO-127.0.0.1 - - [03/Apr/2023 22:35:19] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:35:19 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:19 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:19 INFO-127.0.0.1 - - [03/Apr/2023 22:35:19] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:20 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:20 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:20 INFO-127.0.0.1 - - [03/Apr/2023 22:35:20] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:20 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:20 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:20 INFO-127.0.0.1 - - [03/Apr/2023 22:35:20] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:20 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:20 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:20 INFO-127.0.0.1 - - [03/Apr/2023 22:35:20] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:20 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:20 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:20 INFO-127.0.0.1 - - [03/Apr/2023 22:35:20] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:32 INFO-127.0.0.1 - - [03/Apr/2023 22:35:32] "OPTIONS /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:32 INFO-calculate_factorial: input=-2
+2023-04-03 22:35:32 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:35:32 INFO-127.0.0.1 - - [03/Apr/2023 22:35:32] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:32 INFO-calculate_factorial: input=-2
+2023-04-03 22:35:32 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:35:32 INFO-127.0.0.1 - - [03/Apr/2023 22:35:32] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:33 INFO-calculate_factorial: input=-2
+2023-04-03 22:35:33 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:35:33 INFO-127.0.0.1 - - [03/Apr/2023 22:35:33] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:33 INFO-calculate_factorial: input=-2
+2023-04-03 22:35:33 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:35:33 INFO-127.0.0.1 - - [03/Apr/2023 22:35:33] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:33 INFO-calculate_factorial: input=-2
+2023-04-03 22:35:33 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:35:33 INFO-127.0.0.1 - - [03/Apr/2023 22:35:33] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:33 INFO-calculate_factorial: input=-2
+2023-04-03 22:35:33 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:35:33 INFO-127.0.0.1 - - [03/Apr/2023 22:35:33] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:35:34 INFO-127.0.0.1 - - [03/Apr/2023 22:35:34] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:35:34 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:34 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:34 INFO-127.0.0.1 - - [03/Apr/2023 22:35:34] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:34 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:34 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:34 INFO-127.0.0.1 - - [03/Apr/2023 22:35:34] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:34 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:34 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:34 INFO-127.0.0.1 - - [03/Apr/2023 22:35:34] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:35:34 INFO-calculate_ln: input=-2.0
+2023-04-03 22:35:34 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:35:34 INFO-127.0.0.1 - - [03/Apr/2023 22:35:34] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:37:16 INFO-127.0.0.1 - - [03/Apr/2023 22:37:16] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 22:37:16 INFO-calculate_square_root: input=-2.0
+2023-04-03 22:37:16 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-2.0
+2023-04-03 22:37:16 INFO-127.0.0.1 - - [03/Apr/2023 22:37:16] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:37:16 INFO-calculate_square_root: input=-2.0
+2023-04-03 22:37:16 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-2.0
+2023-04-03 22:37:16 INFO-127.0.0.1 - - [03/Apr/2023 22:37:16] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:37:16 INFO-calculate_square_root: input=-2.0
+2023-04-03 22:37:16 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-2.0
+2023-04-03 22:37:16 INFO-127.0.0.1 - - [03/Apr/2023 22:37:16] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:37:16 INFO-calculate_square_root: input=-2.0
+2023-04-03 22:37:16 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-2.0
+2023-04-03 22:37:16 INFO-127.0.0.1 - - [03/Apr/2023 22:37:16] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:37:16 INFO-calculate_square_root: input=-2.0
+2023-04-03 22:37:16 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-2.0
+2023-04-03 22:37:16 INFO-127.0.0.1 - - [03/Apr/2023 22:37:16] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:37:18 INFO-127.0.0.1 - - [03/Apr/2023 22:37:18] "OPTIONS /factorial HTTP/1.1" 200 -
+2023-04-03 22:37:18 INFO-calculate_factorial: input=-2
+2023-04-03 22:37:18 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:37:18 INFO-127.0.0.1 - - [03/Apr/2023 22:37:18] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:37:18 INFO-calculate_factorial: input=-2
+2023-04-03 22:37:18 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:37:18 INFO-127.0.0.1 - - [03/Apr/2023 22:37:18] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:37:18 INFO-calculate_factorial: input=-2
+2023-04-03 22:37:18 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-2
+2023-04-03 22:37:18 INFO-127.0.0.1 - - [03/Apr/2023 22:37:18] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 22:37:19 INFO-127.0.0.1 - - [03/Apr/2023 22:37:19] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:37:19 INFO-calculate_ln: input=-2.0
+2023-04-03 22:37:19 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:37:19 INFO-127.0.0.1 - - [03/Apr/2023 22:37:19] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:37:20 INFO-calculate_ln: input=-2.0
+2023-04-03 22:37:20 WARNING-calculate_ln: Error: Please enter a positive number, input=-2.0
+2023-04-03 22:37:20 INFO-127.0.0.1 - - [03/Apr/2023 22:37:20] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:37:20 INFO-127.0.0.1 - - [03/Apr/2023 22:37:20] "OPTIONS /power HTTP/1.1" 200 -
+2023-04-03 22:37:20 INFO-calculate_power: input=-2.0, power=2.0
+2023-04-03 22:37:20 INFO-calculate_power: result=4.0
+2023-04-03 22:37:20 INFO-127.0.0.1 - - [03/Apr/2023 22:37:20] "POST /power HTTP/1.1" 200 -
+2023-04-03 22:37:21 INFO-calculate_power: input=-2.0, power=2.0
+2023-04-03 22:37:21 INFO-calculate_power: result=4.0
+2023-04-03 22:37:21 INFO-127.0.0.1 - - [03/Apr/2023 22:37:21] "POST /power HTTP/1.1" 200 -
+2023-04-03 22:58:36 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.236:5000
+2023-04-03 22:58:36 INFO-[33mPress CTRL+C to quit[0m
+2023-04-03 22:58:36 INFO- * Restarting with stat
+2023-04-03 22:58:36 WARNING- * Debugger is active!
+2023-04-03 22:58:36 INFO- * Debugger PIN: 324-570-575
+2023-04-03 22:58:47 INFO-127.0.0.1 - - [03/Apr/2023 22:58:47] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 22:58:47 INFO-calculate_square_root: input=5.0
+2023-04-03 22:58:47 INFO-calculate_square_root: result=2.23606797749979
+2023-04-03 22:58:47 INFO-127.0.0.1 - - [03/Apr/2023 22:58:47] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 22:58:49 INFO-127.0.0.1 - - [03/Apr/2023 22:58:49] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:58:49 INFO-calculate_ln: input=5.0
+2023-04-03 22:58:49 INFO-calculate_ln: result=1.6094379124341003
+2023-04-03 22:58:49 INFO-127.0.0.1 - - [03/Apr/2023 22:58:49] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:53 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:53 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:53 INFO-127.0.0.1 - - [03/Apr/2023 22:58:53] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:54 INFO-127.0.0.1 - - [03/Apr/2023 22:58:54] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:58:54 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:54 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:54 INFO-127.0.0.1 - - [03/Apr/2023 22:58:54] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:58 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:58 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:58 INFO-127.0.0.1 - - [03/Apr/2023 22:58:58] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:58 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:58 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:58 INFO-127.0.0.1 - - [03/Apr/2023 22:58:58] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:59 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:59 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:59 INFO-127.0.0.1 - - [03/Apr/2023 22:58:59] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:59 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:59 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:59 INFO-127.0.0.1 - - [03/Apr/2023 22:58:59] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:58:59 INFO-127.0.0.1 - - [03/Apr/2023 22:58:59] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:58:59 INFO-calculate_ln: input=-5.0
+2023-04-03 22:58:59 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:58:59 INFO-127.0.0.1 - - [03/Apr/2023 22:58:59] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:00 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:00 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:00 INFO-127.0.0.1 - - [03/Apr/2023 22:59:00] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:04 INFO-127.0.0.1 - - [03/Apr/2023 22:59:04] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:59:04 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:04 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:04 INFO-127.0.0.1 - - [03/Apr/2023 22:59:04] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:11 INFO-127.0.0.1 - - [03/Apr/2023 22:59:11] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:59:11 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:11 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:11 INFO-127.0.0.1 - - [03/Apr/2023 22:59:11] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:11 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:11 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:11 INFO-127.0.0.1 - - [03/Apr/2023 22:59:11] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:11 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:11 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:11 INFO-127.0.0.1 - - [03/Apr/2023 22:59:11] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:11 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:11 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:11 INFO-127.0.0.1 - - [03/Apr/2023 22:59:11] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:18 INFO-127.0.0.1 - - [03/Apr/2023 22:59:18] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 22:59:18 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:18 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:18 INFO-127.0.0.1 - - [03/Apr/2023 22:59:18] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:19 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:19 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:19 INFO-127.0.0.1 - - [03/Apr/2023 22:59:19] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:19 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:19 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:19 INFO-127.0.0.1 - - [03/Apr/2023 22:59:19] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:19 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:19 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:19 INFO-127.0.0.1 - - [03/Apr/2023 22:59:19] "POST /ln HTTP/1.1" 200 -
+2023-04-03 22:59:19 INFO-calculate_ln: input=-5.0
+2023-04-03 22:59:19 WARNING-calculate_ln: Error: Please enter a positive number, input=-5.0
+2023-04-03 22:59:19 INFO-127.0.0.1 - - [03/Apr/2023 22:59:19] "POST /ln HTTP/1.1" 200 -
+2023-04-03 23:02:56 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.141.236:5000
+2023-04-03 23:02:56 INFO-[33mPress CTRL+C to quit[0m
+2023-04-03 23:02:56 INFO- * Restarting with stat
+2023-04-03 23:02:56 WARNING- * Debugger is active!
+2023-04-03 23:02:56 INFO- * Debugger PIN: 324-570-575
+2023-04-03 23:03:01 INFO-127.0.0.1 - - [03/Apr/2023 23:03:01] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:01 INFO-calculate_square_root: input=5.0
+2023-04-03 23:03:01 INFO-calculate_square_root: result=2.23606797749979
+2023-04-03 23:03:01 INFO-127.0.0.1 - - [03/Apr/2023 23:03:01] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:04 INFO-calculate_square_root: input=-5.0
+2023-04-03 23:03:04 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-5.0
+2023-04-03 23:03:04 INFO-127.0.0.1 - - [03/Apr/2023 23:03:04] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:05 INFO-calculate_square_root: input=-5.0
+2023-04-03 23:03:05 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-5.0
+2023-04-03 23:03:05 INFO-127.0.0.1 - - [03/Apr/2023 23:03:05] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:17 INFO-127.0.0.1 - - [03/Apr/2023 23:03:17] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:17 INFO-calculate_square_root: input=-5.0
+2023-04-03 23:03:17 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-5.0
+2023-04-03 23:03:17 INFO-127.0.0.1 - - [03/Apr/2023 23:03:17] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:18 INFO-calculate_square_root: input=-5.0
+2023-04-03 23:03:18 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-5.0
+2023-04-03 23:03:18 INFO-127.0.0.1 - - [03/Apr/2023 23:03:18] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:20 INFO-calculate_square_root: input=-5.0
+2023-04-03 23:03:20 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-5.0
+2023-04-03 23:03:20 INFO-127.0.0.1 - - [03/Apr/2023 23:03:20] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:39 INFO-127.0.0.1 - - [03/Apr/2023 23:03:39] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:39 INFO-calculate_square_root: input=-9.0
+2023-04-03 23:03:39 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-9.0
+2023-04-03 23:03:39 INFO-127.0.0.1 - - [03/Apr/2023 23:03:39] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:39 INFO-calculate_square_root: input=-9.0
+2023-04-03 23:03:39 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-9.0
+2023-04-03 23:03:39 INFO-127.0.0.1 - - [03/Apr/2023 23:03:39] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:40 INFO-calculate_square_root: input=-9.0
+2023-04-03 23:03:40 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-9.0
+2023-04-03 23:03:40 INFO-127.0.0.1 - - [03/Apr/2023 23:03:40] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:40 INFO-calculate_square_root: input=-9.0
+2023-04-03 23:03:40 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-9.0
+2023-04-03 23:03:40 INFO-127.0.0.1 - - [03/Apr/2023 23:03:40] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:40 INFO-calculate_square_root: input=-9.0
+2023-04-03 23:03:40 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-9.0
+2023-04-03 23:03:40 INFO-127.0.0.1 - - [03/Apr/2023 23:03:40] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:48 INFO-127.0.0.1 - - [03/Apr/2023 23:03:48] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:48 INFO-calculate_square_root: input=7.0
+2023-04-03 23:03:48 INFO-calculate_square_root: result=2.6457513110645907
+2023-04-03 23:03:48 INFO-127.0.0.1 - - [03/Apr/2023 23:03:48] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:03:50 INFO-127.0.0.1 - - [03/Apr/2023 23:03:50] "OPTIONS /factorial HTTP/1.1" 200 -
+2023-04-03 23:03:50 INFO-calculate_factorial: input=7
+2023-04-03 23:03:50 INFO-calculate_factorial: result=5040
+2023-04-03 23:03:50 INFO-127.0.0.1 - - [03/Apr/2023 23:03:50] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 23:03:51 INFO-127.0.0.1 - - [03/Apr/2023 23:03:51] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 23:03:51 INFO-calculate_ln: input=7.0
+2023-04-03 23:03:51 INFO-calculate_ln: result=1.9459101490553132
+2023-04-03 23:03:51 INFO-127.0.0.1 - - [03/Apr/2023 23:03:51] "POST /ln HTTP/1.1" 200 -
+2023-04-03 23:03:52 INFO-127.0.0.1 - - [03/Apr/2023 23:03:52] "OPTIONS /power HTTP/1.1" 200 -
+2023-04-03 23:03:52 INFO-127.0.0.1 - - [03/Apr/2023 23:03:52] "[35m[1mPOST /power HTTP/1.1[0m" 500 -
+2023-04-03 23:07:58 INFO-127.0.0.1 - - [03/Apr/2023 23:07:58] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 23:07:58 INFO-calculate_ln: input=-6.0
+2023-04-03 23:07:58 WARNING-calculate_ln: Error: Please enter a positive number, input=-6.0
+2023-04-03 23:07:58 INFO-127.0.0.1 - - [03/Apr/2023 23:07:58] "POST /ln HTTP/1.1" 200 -
+2023-04-03 23:08:28 INFO-127.0.0.1 - - [03/Apr/2023 23:08:28] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 23:08:28 INFO-calculate_square_root: input=-6.0
+2023-04-03 23:08:28 WARNING-calculate_square_root: Error: Please enter a non-negative number, input=-6.0
+2023-04-03 23:08:28 INFO-127.0.0.1 - - [03/Apr/2023 23:08:28] "POST /sqrt HTTP/1.1" 200 -
+2023-04-03 23:08:30 INFO-127.0.0.1 - - [03/Apr/2023 23:08:30] "OPTIONS /factorial HTTP/1.1" 200 -
+2023-04-03 23:08:30 INFO-calculate_factorial: input=-6
+2023-04-03 23:08:30 WARNING-calculate_factorial: Error: Please enter a non-negative integer, input=-6
+2023-04-03 23:08:30 INFO-127.0.0.1 - - [03/Apr/2023 23:08:30] "POST /factorial HTTP/1.1" 200 -
+2023-04-03 23:08:32 INFO-127.0.0.1 - - [03/Apr/2023 23:08:32] "OPTIONS /ln HTTP/1.1" 200 -
+2023-04-03 23:08:32 INFO-calculate_ln: input=-6.0
+2023-04-03 23:08:32 WARNING-calculate_ln: Error: Please enter a positive number, input=-6.0
+2023-04-03 23:08:32 INFO-127.0.0.1 - - [03/Apr/2023 23:08:32] "POST /ln HTTP/1.1" 200 -
+2023-04-03 23:08:41 INFO-127.0.0.1 - - [03/Apr/2023 23:08:41] "OPTIONS /power HTTP/1.1" 200 -
+2023-04-03 23:08:41 INFO-calculate_power: input=0.0, power=6.0
+2023-04-03 23:08:41 INFO-calculate_power: result=0.0
+2023-04-03 23:08:41 INFO-127.0.0.1 - - [03/Apr/2023 23:08:41] "POST /power HTTP/1.1" 200 -
+2023-04-03 23:08:42 INFO-calculate_power: input=0.0, power=6.0
+2023-04-03 23:08:42 INFO-calculate_power: result=0.0
+2023-04-03 23:08:42 INFO-127.0.0.1 - - [03/Apr/2023 23:08:42] "POST /power HTTP/1.1" 200 -
+2023-04-03 23:08:50 INFO-127.0.0.1 - - [03/Apr/2023 23:08:50] "OPTIONS /power HTTP/1.1" 200 -
+2023-04-03 23:08:50 INFO-calculate_power: input=-6.0, power=0.0
+2023-04-03 23:08:50 INFO-calculate_power: result=1.0
+2023-04-03 23:08:50 INFO-127.0.0.1 - - [03/Apr/2023 23:08:50] "POST /power HTTP/1.1" 200 -
+2023-04-03 23:08:58 INFO-127.0.0.1 - - [03/Apr/2023 23:08:58] "OPTIONS /power HTTP/1.1" 200 -
+2023-04-03 23:08:58 INFO-calculate_power: input=0.0, power=-7.0
+2023-04-03 23:08:58 WARNING-calculate_power: Error: Cannot raise zero to a non-positive power, input=0.0, power=-7.0
+2023-04-03 23:08:58 INFO-127.0.0.1 - - [03/Apr/2023 23:08:58] "POST /power HTTP/1.1" 200 -
+2023-04-03 23:09:01 INFO-127.0.0.1 - - [03/Apr/2023 23:09:01] "OPTIONS /sqrt HTTP/1.1" 200 -
+2023-04-03 23:09:01 INFO-calculate_square_root: input=0.0
+2023-04-03 23:09:01 INFO-calculate_square_root: result=0.0
+2023-04-03 23:09:01 INFO-127.0.0.1 - - [03/Apr/2023 23:09:01] "POST /sqrt HTTP/1.1" 200 -

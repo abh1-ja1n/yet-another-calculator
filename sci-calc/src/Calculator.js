@@ -12,6 +12,9 @@ function Calculator() {
   const calculateSquareRoot = async () => {
     try {
       const response = await axios.post(API_URL + '/sqrt', { number });
+      if(response.data.error){
+        alert(response.data.error)
+      }
       setResult(response.data.result);
     } catch (error) {
       console.error(error);
@@ -21,6 +24,9 @@ function Calculator() {
   const calculateFactorial = async () => {
     try {
       const response = await axios.post(API_URL + '/factorial', { number });
+      if(response.data.error){
+        alert(response.data.error)
+      }
       setResult(response.data.result);
     } catch (error) {
       console.error(error);
@@ -30,6 +36,9 @@ function Calculator() {
   const calculateNaturalLog = async () => {
     try {
       const response = await axios.post(API_URL + '/ln', { number });
+      if(response.data.error){
+        alert(response.data.error)
+      }
       setResult(response.data.result);
     } catch (error) {
       console.error(error);
@@ -39,6 +48,9 @@ function Calculator() {
   const calculatePower = async () => {
     try {
       const response = await axios.post(API_URL + '/power', { number, power });
+      if(response.data.error){
+        alert(response.data.error)
+      }
       setResult(response.data.result);
     } catch (error) {
       console.error(error);
